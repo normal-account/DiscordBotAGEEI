@@ -10,8 +10,7 @@ def prepare_embed(permalink, user, reporter, content):
     embed = discord.Embed(title="Nouveau message signalé")
     embed.add_field(name="Lien du message", value=permalink, inline=False)
     embed.add_field(name="Auteur du message", value=user, inline=False)
-    embed.add_field(name="Utilisateur ayant signalé le message", value=reporter, inline=Fa
-lse)
+    embed.add_field(name="Utilisateur ayant signalé le message", value=reporter, inline=False)
     embed.add_field(name="Contenu du message", value=content, inline=False)
     return embed
 
